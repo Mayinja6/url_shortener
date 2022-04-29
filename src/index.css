@@ -29,10 +29,6 @@ body {
   font-family: var(--font_family);
 }
 
-/* img {
-  max-width: 100%;
-} */
-
 p {
   color: var(--greyish_violet);
 }
@@ -49,6 +45,7 @@ button {
 }
 
 .cyan_btn {
+  transition: var(--transition101);
   color: var(--neutral_white);
   background: var(--cyan_color);
 }
