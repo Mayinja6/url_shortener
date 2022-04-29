@@ -1,0 +1,38 @@
+.callToAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+  background-color: var(--dark_violet);
+}
+
+.callToAction_heading {
+  color: var(--neutral_white);
+  padding: 5px 0 15px;
+}
+
+.callToAction_heading_btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+
+@media (min-width: 500px) {
+  .callToAction {
+    background-image: var(--cta_desktop_img);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .callToAction {
+    text-align: center;
+    font-size: var(--font_sm);
+    background-image: var(--cta_mobile_img);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

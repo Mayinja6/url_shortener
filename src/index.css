@@ -1,0 +1,58 @@
+:root {
+  --font_sm: 0.875rem;
+  --font_md: 1.125rem;
+  --font_weight1: 500;
+  --font_weight2: 700;
+  --font_family: "poppins";
+  --transition101: all 0.3s ease-in-out;
+  --neutral_grey: hsl(0, 0%, 75%);
+  --cyan_color: #2acfcf;
+  --dark_violet: hsl(257, 27%, 26%);
+  --secondary_red: hsl(0, 87%, 67%);
+  --neutral_white: hsl(206, 33%, 96%);
+  --greyish_violet: hsl(257, 7%, 63%);
+  --very_dark_blue: hsl(255, 11%, 22%);
+  --very_dark_violet: hsl(260, 8%, 14%);
+  --cta_desktop_img: url("./assets/bg-boost-desktop.svg");
+  --cta_mobile_img: url("./assets/bg-boost-mobile.svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--font_md);
+  font-family: var(--font_family);
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+p {
+  color: var(--greyish_violet);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+  font-size: inherit;
+  color: var(--greyish_violet);
+  font-family: var(--font_family);
+  transition: var(--transition101);
+}
+
+.cyan_btn {
+  color: var(--neutral_white);
+  background: var(--cyan_color);
+}
+
+.cyan_btn:hover {
+  background: hsl(180, 66%, 75%);
+}

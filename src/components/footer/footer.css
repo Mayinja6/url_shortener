@@ -1,0 +1,123 @@
+.footer {
+  background: var(--very_dark_violet);
+}
+
+.footer p {
+  margin: 2.5px 0;
+  font-size: var(--font_md);
+}
+
+.footer_img img {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(2%);
+}
+
+.footer_navigation-row_heading {
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: var(--font_weight2);
+  color: #fff;
+}
+
+.footer_navigation-row span:hover {
+  cursor: pointer;
+  color: var(--cyan_color);
+}
+
+.footer_social_icons img {
+  transition: var(--transition101);
+}
+
+.footer_social_icons img:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer_social_icons img:hover {
+  cursor: pointer;
+  filter: invert(27%) sepia(10%) saturate(6203%) hue-rotate(141deg)
+    brightness(94%) contrast(87%);
+}
+
+@media (min-width: 780px) {
+  .footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 25px;
+  }
+
+  .footer_navigation {
+    display: flex;
+  }
+
+  .footer_navigation-row:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding: 50px 80px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .footer {
+    padding: 50px 150px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 779px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer_img,
+  .footer_social_icons,
+  .footer_navigation {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_img {
+    order: 1;
+  }
+
+  .footer_social_icons {
+    order: 2;
+  }
+
+  .footer_navigation {
+    order: 3;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .footer_navigation-row:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding: 50px 0 20px;
+  }
+
+  .footer,
+  .footer_navigation-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer_img {
+    padding: 15px 0;
+  }
+
+  .footer_social_icons {
+    padding: 20px 0 10px;
+  }
+}
