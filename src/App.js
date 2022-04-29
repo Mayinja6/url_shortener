@@ -1,9 +1,8 @@
-import { Header, Cta, Footer } from "./components";
+import { Cta, Footer } from "./components";
 
 function App() {
   return (
     <div>
-      <Header />
       <Cta />
       <Footer />
     </div>
