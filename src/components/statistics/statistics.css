@@ -1,4 +1,14 @@
+.statistics {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
 .statistics_text {
+  margin: 25px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,14 +16,120 @@
 
 .statistics_text-heading {
   font-size: 30px;
+  text-align: center;
+}
+
+.statistics_text-heading-p {
+  width: 65%;
+  text-align: center;
 }
 
 .statistics_brands {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 25px;
 }
 
 .statistics_brands-div {
-  margin: 0 25px;
+  width: 300px;
   padding: 25px;
+  margin: 10px;
+  position: relative;
   background: var(--neutral_white);
+  border-radius: 5px;
+}
+
+.statistics_brands-div img {
+  background: var(--dark_violet);
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  top: -25px;
+}
+
+.statistics_brands-div h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.statistics p {
+  font-size: 14px;
+}
+
+.statistics_brands-hr {
+  display: none;
+}
+
+@media (min-width: 1190px) {
+  .brand2 {
+    margin-top: 50px;
+  }
+
+  .brand3 {
+    margin-top: 100px;
+  }
+
+  .statistics_brands-div:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .statistics_brands-hr {
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 98%;
+    height: 10px;
+    border: none;
+    outline: none;
+    display: inline;
+    position: absolute;
+    background: var(--cyan_color);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 749px) {
+  .brand1 {
+    margin: 0 0 30px;
+  }
+
+  .brand2 {
+    margin: 15px 0;
+  }
+
+  .brand3 {
+    margin: 30px 0 0;
+  }
+
+  .statistics_text-heading-p {
+    width: 100%;
+  }
+
+  .statistics_brands-div img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .statistics_brands-hr {
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: 10px;
+    height: 100%;
+    outline: none;
+    border: none;
+    display: inline;
+    position: absolute;
+    background: var(--cyan_color);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 388px) {
+  .statistics_brands-div {
+    width: 100%;
+  }
 }

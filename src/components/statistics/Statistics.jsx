@@ -16,24 +16,28 @@ const Statistics = () => {
         </p>
       </div>
       <div className="statistics_brands">
-        <div className="statistics_brands-div">
+        <hr className="statistics_brands-hr" />
+        <div className="statistics_brands-div brand1">
           <img src={icon_brand_recog} alt="statistics_brands-div-img" />
+
           <h2>Brand Recognition</h2>
           <p>
             Boost your brand recognition with each click. Generic links don’t
             mean a thing. Branded links help instil confidence in your content.
           </p>
         </div>
-        <div className="statistics_brands-div">
+        <div className="statistics_brands-div brand2">
           <img src={icon_detailed_records} alt="statistics_brands-div-img" />
+
           <h2>Detailed Records</h2>
           <p>
             Gain insights into who is clicking your links. Knowing when and
             where people engage with your content helps inform better decisions.
           </p>
         </div>
-        <div className="statistics_brands-div">
+        <div className="statistics_brands-div brand3">
           <img src={icon_fully_custom} alt="statistics_brands-div-img" />
+
           <h2>Fully Customizable</h2>
           <p>
             Improve brand awareness and content discoverability through
