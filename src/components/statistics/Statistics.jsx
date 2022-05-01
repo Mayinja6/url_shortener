@@ -19,7 +19,6 @@ const Statistics = () => {
         <hr className="statistics_brands-hr" />
         <div className="statistics_brands-div brand1">
           <img src={icon_brand_recog} alt="statistics_brands-div-img" />
-
           <h2>Brand Recognition</h2>
           <p>
             Boost your brand recognition with each click. Generic links don’t
@@ -28,7 +27,6 @@ const Statistics = () => {
         </div>
         <div className="statistics_brands-div brand2">
           <img src={icon_detailed_records} alt="statistics_brands-div-img" />
-
           <h2>Detailed Records</h2>
           <p>
             Gain insights into who is clicking your links. Knowing when and
@@ -37,7 +35,6 @@ const Statistics = () => {
         </div>
         <div className="statistics_brands-div brand3">
           <img src={icon_fully_custom} alt="statistics_brands-div-img" />
-
           <h2>Fully Customizable</h2>
           <p>
             Improve brand awareness and content discoverability through
