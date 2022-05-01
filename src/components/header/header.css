@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background: #fff;
 }
 
 .header_content_navigation p:not(:last-child) {

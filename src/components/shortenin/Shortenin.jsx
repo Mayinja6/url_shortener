@@ -1,9 +1,8 @@
-import { useState } from "react";
 import "./shortenin.css";
 
-const Shortenin = () => {
-  const [url, setUrl] = useState("");
+import LinkComponent from "./LinkComponent";
 
+const Shortenin = () => {
   return (
     <div className="shortenin">
       <div className="shortenin_calltoaction">
@@ -11,13 +10,13 @@ const Shortenin = () => {
           type="url"
           placeholder="Shorten a link here..."
           className="shortenin_calltoaction-input"
-          onChange={(e) => setUrl(e.target.value)}
         />
         <button className="shortenin_calltoaction-btn cyan_btn">
           Shorten it!
         </button>
+        <span className="shortenin_calltoaction-msg">please add a link</span>
       </div>
-      <div className="shortenin_results">Shortenin Results</div>
+      <LinkComponent url={`htttps://m.facebook.com/`} />
     </div>
   );
 };

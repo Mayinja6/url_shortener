@@ -1,12 +1,11 @@
 .hero {
   display: flex;
-  margin: 20px 0 50px;
-  /* padding-left: 100px; */
+  padding-bottom: 150px;
+  background: #fff;
   position: relative;
 }
 
 .hero_content {
-  /* width: 50%; */
   display: flex;
   flex-direction: column;
   padding-top: 25px;
@@ -18,7 +17,6 @@
 }
 
 .hero_content_text {
-  /* width: 80%; */
   color: var(--neutral_grey);
 }
 
@@ -98,7 +96,7 @@
 @media (max-width: 450px) {
   .hero {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px 150px;
   }
 
   .hero_content {
