@@ -4,7 +4,6 @@
   --font_weight1: 500;
   --font_weight2: 700;
   --font_family: "poppins";
-  --transition101: all 0.3s ease-in-out;
   --neutral_grey: hsl(0, 0%, 75%);
   --cyan_color: hsl(180, 66%, 49%);
   --dark_violet: hsl(257, 27%, 26%);
@@ -13,8 +12,9 @@
   --greyish_violet: hsl(257, 7%, 63%);
   --very_dark_blue: hsl(255, 11%, 22%);
   --very_dark_violet: hsl(260, 8%, 14%);
-  --cta_desktop_img: url("./assets/bg-boost-desktop.svg");
+  --transition101: all 0.3s ease-in-out;
   --cta_mobile_img: url("./assets/bg-boost-mobile.svg");
+  --cta_desktop_img: url("./assets/bg-boost-desktop.svg");
 }
 
 * {
@@ -25,8 +25,8 @@
 }
 
 body {
-  background: var(--neutral_grey);
   font-size: var(--font_md);
+  background: var(--neutral_grey);
   font-family: var(--font_family);
 }
 
@@ -46,9 +46,9 @@ button {
 }
 
 .cyan_btn {
-  transition: var(--transition101);
   color: var(--neutral_white);
   background: var(--cyan_color);
+  transition: var(--transition101);
 }
 
 .cyan_btn:hover {
