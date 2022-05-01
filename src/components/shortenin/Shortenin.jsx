@@ -16,7 +16,10 @@ const Shortenin = () => {
         </button>
         <span className="shortenin_calltoaction-msg">please add a link</span>
       </div>
-      <LinkComponent url={`htttps://m.facebook.com/`} />
+      <LinkComponent
+        url={`https://m.facebook.com/`}
+        newUrl={`https://bitly.com/`}
+      />
     </div>
   );
 };
