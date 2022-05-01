@@ -1,0 +1,19 @@
+.statistics_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics_text-heading {
+  font-size: 30px;
+}
+
+.statistics_brands {
+  display: flex;
+}
+
+.statistics_brands-div {
+  margin: 0 25px;
+  padding: 25px;
+  background: var(--neutral_white);
+}

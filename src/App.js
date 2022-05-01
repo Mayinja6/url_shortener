@@ -1,4 +1,4 @@
-import { Shortenin, Cta, Footer, Header, Hero } from "./components";
+import { Shortenin, Cta, Footer, Header, Hero, Statistics } from "./components";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Header />
       <Hero />
       <Shortenin />
+      <Statistics />
       <Cta />
       <Footer />
     </div>
